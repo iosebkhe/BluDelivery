@@ -85,7 +85,6 @@
 
   .header__contact--social {
     width: 100%;
-    gap: 0;
     justify-content: space-between;
   }
 

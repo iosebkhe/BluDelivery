@@ -242,6 +242,7 @@ a {
   display: inline-block;
   font-size: 1.8rem;
   margin: 0.6rem 0;
+  color: var(--clr-primary);
 }
 
 /* services style */
