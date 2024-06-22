@@ -1,0 +1,145 @@
+/* 640px */
+@media screen and (min-width: 40em) {
+  .navigation__item {
+    font-size: 2rem;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0.6rem 2.6rem;
+  }
+
+  .navigation__tel {
+    font-size: 2rem;
+  }
+
+  .header__contact--form-link {
+    font-size: 1.8rem;
+    padding: 1.2rem 1.8rem;
+  }
+
+  .header__contact--social {
+    gap: 1.2rem;
+  }
+
+  .header__contact--social-link {
+    width: 3.6rem;
+    height: 3.6rem;
+  }
+
+  .header__contact--social-link > svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero__imgBox-img {
+    aspect-ratio: 3/1;
+  }
+
+  .hero__imgBox-text > span {
+    font-size: 2.8rem;
+    line-height: normal;
+  }
+
+  .hero__main-text {
+    font-size: 2rem;
+  }
+
+  /* services styles */
+  .services__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .services__each-service--text > h3 {
+    font-size: 2.4rem;
+  }
+}
+
+/* 768px */
+@media screen and (min-width: 48em) {
+  .header {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    justify-content: space-between;
+  }
+
+  .header__navigationWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header__logoBox {
+    flex-direction: column;
+  }
+
+  .header__logo--links {
+    justify-content: center;
+  }
+
+  .header__logo--lang-text {
+    display: block;
+  }
+
+  .header__contact {
+    margin-top: 0;
+    flex-direction: column;
+  }
+
+  .header__contact--social {
+    width: 100%;
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  .navigation {
+    margin-top: 0;
+    flex: 1;
+  }
+
+  /* slider styles */
+  .splide__slide img {
+    aspect-ratio: 4/2;
+    object-fit: cover;
+  }
+}
+
+/* 1024px */
+@media screen and (min-width: 64em) {
+  .header__contact {
+    gap: 1.6rem;
+  }
+
+  .navigation__item {
+    padding: 1rem 0;
+    width: 80%;
+  }
+
+  .hero__imgBox-text > span {
+    font-size: 3.8rem;
+    padding: 0 2rem;
+  }
+
+  /* main title styles */
+  .main-title {
+    font-size: 3.2rem;
+  }
+
+  /* main title styles */
+  .footer__title {
+    font-size: 3.2rem;
+  }
+}
+
+/* 1280px */
+@media screen and (min-width: 80em) {
+  .header__contact--form-link {
+    font-size: 2rem;
+  }
+
+  /* services styles */
+  .services__each-service--img {
+    aspect-ratio: 4/2;
+  }
+}
+
+/* 1400px */
+@media screen and (min-width: 87.5em) {
+}

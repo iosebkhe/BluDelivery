@@ -1,0 +1,333 @@
+@font-face {
+  font-family: "BPG Banner Caps";
+  src: url("./fonts/bpg-banner-caps-webfont.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/bpg-banner-caps-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("./fonts/bpg-banner-caps-webfont.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("./fonts/bpg-banner-caps-webfont.woff")
+      format("woff"),
+    /* Pretty Modern Browsers */ url("./fonts/bpg-banner-caps-webfont.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("./fonts/bpg-banner-caps-webfont.svg#bpg_banner_capsregular")
+      format("svg"); /* Legacy iOS */
+}
+
+:root {
+  --clr-gray-lightest: #fafafa;
+  --clr-gray-neutral: #f7f7f7;
+  --clr-gray-darken: #605e5e;
+  --clr-dark: #292929;
+  --clr-primary: #002c6b;
+  --border-radius-xs: 0.4rem;
+  --ff-BPG-Banner-CAPS: "BPG Banner Caps", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Noto Serif Georgian", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 1.6rem;
+}
+
+img {
+  width: 100%;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.splide__arrow {
+  background: var(--clr-primary) !important;
+  opacity: 1 !important;
+  width: 3rem !important;
+  height: 3rem !important;
+}
+
+.splide__pagination__page {
+  background-color: var(--clr-gray-neutral) !important;
+}
+
+.splide__pagination__page.is-active {
+  background-color: var(--clr-primary) !important;
+}
+
+.splide__arrow svg {
+  fill: var(--clr-gray-lightest) !important;
+}
+
+.splide__list {
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.03);
+}
+
+.splide__slide {
+  border-radius: var(--border-radius-xs);
+  overflow: hidden;
+}
+
+.splide__slide img {
+  width: 100%;
+  height: auto;
+}
+
+/* title styles */
+
+.main-titleBox {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2.4rem;
+}
+
+.main-title {
+  font-family: var(--ff-BPG-Banner-CAPS);
+  font-size: 2.8rem;
+  position: relative;
+}
+
+.main-title::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0.4rem;
+  background-color: var(--clr-primary);
+  position: absolute;
+  left: 0;
+  bottom: -0.4rem;
+}
+
+/* Hero styles */
+.hero {
+  padding-top: 2.8rem;
+  padding-bottom: 3.8rem;
+  background-color: var(--clr-gray-lightest);
+}
+
+.hero__imgBox {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--border-radius-xs);
+  margin-top: 1.6rem;
+}
+
+.hero__imgBox-text {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__imgBox-text > span {
+  font-family: var(--ff-BPG-Banner-CAPS);
+  color: var(--clr-gray-lightest);
+  font-size: 1.8rem;
+}
+
+.hero__imgBox-img {
+  aspect-ratio: 3/2;
+  object-fit: cover;
+}
+
+.hero__main-text {
+  text-align: center;
+  margin-top: 1.6rem;
+}
+
+.hero__main-text > span {
+  font-family: var(--ff-BPG-Banner-CAPS);
+  color: var(--clr-primary);
+  font-weight: 700;
+}
+
+/* Header Styles */
+
+.header__logoBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo--text {
+  font-family: var(--ff-BPG-Banner-CAPS);
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.header__logo--lang-text {
+  display: none;
+}
+
+.header__logo--links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header__logo--link {
+  text-decoration: none;
+}
+
+.header__logo--img {
+  width: 3.2rem;
+}
+
+.header__contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 1.6rem;
+}
+
+.header__contact--social {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.header__contact--form-link {
+  display: inline-block;
+  background-color: var(--clr-primary);
+  color: var(--clr-gray-lightest);
+  padding: 1rem 1.6rem;
+  border-radius: var(--border-radius-xs);
+}
+
+/* Navigation Styles */
+.navigation {
+  text-align: center;
+  margin-top: 1.6rem;
+}
+
+.navigation__list {
+  list-style: none;
+}
+
+.navigation__item {
+  font-size: 1.8rem;
+  background-color: var(--clr-gray-neutral);
+  color: var(--clr-primary);
+  border: 0.1rem solid var(--clr-primary);
+  padding: 0.6rem 0;
+  border-radius: var(--border-radius-xs);
+}
+
+.navigation__tel {
+  display: inline-block;
+  font-size: 1.8rem;
+  margin: 0.6rem 0;
+}
+
+/* services style */
+.services {
+  margin-top: 6.4rem;
+  margin-bottom: 6.4rem;
+}
+
+.services__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.6rem;
+}
+
+.services__each-service {
+  font-family: var(--ff-BPG-Banner-CAPS);
+  position: relative;
+  border-radius: var(--border-radius-xs);
+  overflow: hidden;
+}
+
+.services__each-service--img {
+  aspect-ratio: 3/2;
+  object-fit: cover;
+}
+
+.services__each-service--text {
+  position: absolute;
+  inset: 0;
+  background-color: hsla(215, 100%, 21%, 0.7);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services__each-service--text > h3 {
+  color: var(--clr-gray-lightest);
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+/* autos style */
+.autos {
+  padding-top: 6.4rem;
+  margin-bottom: 7.2rem;
+}
+
+.footer {
+  padding-top: 6.4rem;
+  padding-bottom: 7.2rem;
+  background-color: var(--clr-gray-neutral);
+}
+
+.footer__titleBox {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2.4rem;
+}
+
+.footer__title {
+  font-family: var(--ff-BPG-Banner-CAPS);
+  font-size: 2.8rem;
+  position: relative;
+}
+
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__contact--social {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.footer__contact--social-link > svg {
+  width: 3.6rem;
+  height: 3.6rem;
+}
+
+.footer__link {
+  font-size: 2.8rem;
+  color: var(--clr-primary);
+}
