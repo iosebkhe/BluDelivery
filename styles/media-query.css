@@ -1,14 +1,9 @@
 /* 640px */
 @media screen and (min-width: 40em) {
   .navigation__item {
-    font-size: 2rem;
     width: fit-content;
     margin: 0 auto;
     padding: 0.6rem 2.6rem;
-  }
-
-  .navigation__tel {
-    font-size: 2rem;
   }
 
   .header__contact--form-link {
