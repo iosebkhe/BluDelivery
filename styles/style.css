@@ -239,6 +239,12 @@ a {
   border-radius: var(--border-radius-xs);
 }
 
+.navigation__telBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .navigation__tel {
   display: flex;
   align-items: center;
