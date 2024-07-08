@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BlueDelivery | Перевозка мебели</title>
+    <title>BlueDelivery | Перевозка мебели по Грузии</title>
     <meta
       name="description"
       content="BlueDelivery.ge предлагает быстрые и доступные услуги по перевозке мебели в Грузии. Наши опытные специалисты занимаются разборкой, сборкой и транспортировкой любого типа мебели в течение 24 часов."
@@ -45,6 +45,57 @@
       property="twitter:image"
       content="https://www.bluedelivery.ge/images/blueDelivery-og.png"
     />
+
+    <!-- Structured Data for Google Search -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Blue Delivery",
+        "image": "https://www.bluedelivery.ge/images/logo.png",
+        "telephone": "+995-593-425-011",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Didi Jikhaishi 112",
+          "addressLocality": "Tbilisi",
+          "addressRegion": "Tbilisi",
+          "postalCode": "0180",
+          "addressCountry": "GE"
+        },
+        "url": "https://www.bluedelivery.ge",
+        "description": "Reliable furniture transportation services in Georgia.",
+        "sameAs": [
+          "https://telegram.im/@bluedeliveery",
+          "https://wa.me/593425011",
+          "viber://chat/?number=%2B995593425011"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+995-593-425-011",
+          "contactType": "Customer Service",
+          "areaServed": "GE",
+          "availableLanguage": ["Georgian", "English", "Russian"]
+        }
+      }
+    </script>
+
+    <!-- hreflang attributes after meta tags -->
+    <link
+      rel="alternate"
+      href="http://bluedelivery.ge/index.html"
+      hreflang="ka"
+    />
+    <link
+      rel="alternate"
+      href="http://bluedelivery.ge/english.html"
+      hreflang="en"
+    />
+    <link
+      rel="alternate"
+      href="http://bluedelivery.ge/russian.html"
+      hreflang="ru"
+    />
+
     <!-- Favicon -->
     <link
       rel="apple-touch-icon"
@@ -130,7 +181,7 @@
                   </a>
                   <a
                     class="header__logo--link"
-                    href="./indexEng.html"
+                    href="./english.html"
                     rel="noreferrer"
                   >
                     <img
@@ -173,7 +224,7 @@
                 <div class="header__contact--social">
                   <a
                     class="header__contact--social-link"
-                    href="#"
+                    href="https://telegram.im/@bluedeliveery"
                     rel="noreferrer"
                   >
                     <svg
@@ -253,7 +304,7 @@
               <img
                 class="hero__imgBox-img"
                 src="./images/hero-img.jpg"
-                alt=""
+                alt="hero image"
               />
             </div>
           </div>
@@ -329,16 +380,16 @@
             <div class="splide__track">
               <ul class="splide__list">
                 <li class="splide__slide">
-                  <img src="./images/car-1.jpg" />
+                  <img src="./images/car-1.jpg" alt="car 1" />
                 </li>
                 <li class="splide__slide">
-                  <img src="./images/car-2.jpg" />
+                  <img src="./images/car-2.jpg" alt="car 2" />
                 </li>
                 <li class="splide__slide">
-                  <img src="./images/car-3.jpg" />
+                  <img src="./images/car-3.jpg" alt="car 3" />
                 </li>
                 <li class="splide__slide">
-                  <img src="./images/car-4.jpg" />
+                  <img src="./images/car-4.jpg" alt="car 4" />
                 </li>
               </ul>
             </div>
@@ -355,7 +406,11 @@
 
         <div class="footer__contact">
           <div class="footer__contact--social">
-            <a class="footer__contact--social-link" href="#" rel="noreferrer">
+            <a
+              class="footer__contact--social-link"
+              href="https://telegram.im/@bluedeliveery"
+              rel="noreferrer"
+            >
               <svg
                 width="32"
                 height="32"
